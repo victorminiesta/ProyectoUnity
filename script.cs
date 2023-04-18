@@ -29,4 +29,9 @@ public class script : MonoBehaviour
         botonjugar.SetActive(true);
 
     }
+    public void volveralinicion()
+    {
+        inicioff.SetActive(true);
+        botonjugar.SetActive(false);
+    }
 }
