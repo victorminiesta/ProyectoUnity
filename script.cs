@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class script : MonoBehaviour
 {
     // Start is called before the first frame update
-   
+    GameObject botonjugar;
+    GameObject inicioff;
+    
     void Start()
     {
         
@@ -20,5 +22,11 @@ public class script : MonoBehaviour
     public void fuera()
     {
         Application.Quit();
+    }
+    public void jugar()
+    {
+        inicioff.SetActive(false);
+        botonjugar.SetActive(true);
+
     }
 }
