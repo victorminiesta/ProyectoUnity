@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class script : MonoBehaviour
 {
     // Start is called before the first frame update
-    GameObject botonjugar;
-    GameObject inicioff;
+    public GameObject botonjugar;
+    public GameObject inicioff;
     
     void Start()
     {
