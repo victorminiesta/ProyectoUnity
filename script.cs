@@ -85,7 +85,7 @@ public class script : MonoBehaviour
     public void girardado()
     {
         int numeror;
-        numeror = Random.Range(1, 3);
+        numeror = Random.Range(1, 4);
         numero.text = numeror.ToString();
     }
 
