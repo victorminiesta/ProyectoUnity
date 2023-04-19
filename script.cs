@@ -14,6 +14,7 @@ public class script : MonoBehaviour
     public GameObject aviso,aviso2;
     int numeror;
     public GameObject dado1, dado2, dado3;
+    public Text nombrejugador1, nombrejugador2; 
     void Start()
     {
         
@@ -44,6 +45,9 @@ public class script : MonoBehaviour
             aviso22 = false;
 
         }
+
+        nombrejugador1.text = jugador1.text;
+        nombrejugador2.text = jugador2.text;
 
     }
     public void fuera()
@@ -110,4 +114,6 @@ public class script : MonoBehaviour
 
         }
     }
+
+    
 }
