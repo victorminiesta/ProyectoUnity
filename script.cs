@@ -88,5 +88,13 @@ public class script : MonoBehaviour
         numeror = Random.Range(1, 4);
         numero.text = numeror.ToString();
     }
-
+    public void imagendado()
+    {
+        switch (numeror)
+        {
+            case 1:
+            
+            default:
+        }
+    }
 }
