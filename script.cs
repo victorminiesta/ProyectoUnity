@@ -12,6 +12,8 @@ public class script : MonoBehaviour
     bool sepuedejugar,aviso22 = false ;
     public GameObject empezarjuego;
     public GameObject aviso,aviso2;
+    int numeror;
+    public GameObject dado1, dado2, dado3;
     void Start()
     {
         
@@ -84,17 +86,28 @@ public class script : MonoBehaviour
     }
     public void girardado()
     {
-        int numeror;
+        
         numeror = Random.Range(1, 4);
         numero.text = numeror.ToString();
+        dado1.SetActive(false);
+        dado2.SetActive(false);
+        dado3.SetActive(false);
     }
     public void imagendado()
     {
+
         switch (numeror)
         {
-            case 1:
-            
-            default:
+            case 1: dado1.SetActive(true);
+                break;
+            case 2:
+                dado2.SetActive(true);
+                break;
+            case 3:
+                dado3.SetActive(true);
+                break;
+
+
         }
     }
 }
