@@ -8,7 +8,7 @@ public class script : MonoBehaviour
     // Start is called before the first frame update
     public GameObject botonjugar;
     public GameObject inicioff;
-    public Text jugador1, jugador2;
+    public Text jugador1, jugador2,numero;
     bool sepuedejugar,aviso22 = false ;
     public GameObject empezarjuego;
     public GameObject aviso,aviso2;
@@ -82,4 +82,11 @@ public class script : MonoBehaviour
         }
         
     }
+    public void girardado()
+    {
+        int numeror;
+        numeror = Random.Range(1, 3);
+        numero.text = numeror.ToString();
+    }
+
 }
