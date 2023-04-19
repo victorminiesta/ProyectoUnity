@@ -8,7 +8,10 @@ public class script : MonoBehaviour
     // Start is called before the first frame update
     public GameObject botonjugar;
     public GameObject inicioff;
-    
+    public Text jugador1, jugador2;
+    bool sepuedejugar,aviso22 = false ;
+    public GameObject empezarjuego;
+    public GameObject aviso,aviso2;
     void Start()
     {
         
@@ -17,7 +20,29 @@ public class script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(jugador1.text != ""&& jugador2.text !="")
+        {
+             sepuedejugar = true;
+
+        }
+        else
+        {
+            sepuedejugar = false;
+          
+        }
+        if (jugador1.text.Equals(jugador2.text))
+        {
+            sepuedejugar = false;
+            aviso22 = true;
+
+        }
+        if (!jugador1.text.Equals(jugador2.text))
+        {
+            
+            aviso22 = false;
+
+        }
+
     }
     public void fuera()
     {
@@ -33,5 +58,28 @@ public class script : MonoBehaviour
     {
         inicioff.SetActive(true);
         botonjugar.SetActive(false);
+    }
+    public void empezar() { 
+        if (sepuedejugar == true)
+        {
+            botonjugar.SetActive(false);
+            empezarjuego.SetActive(true);
+            aviso.SetActive(false);
+
+        }
+        else if (aviso22 == false)
+        {
+            aviso.SetActive(true);
+            aviso2.SetActive(false);
+
+        }
+        if(aviso22 == true)
+        {
+            aviso2.SetActive(true);
+            aviso.SetActive(false);
+            
+
+        }
+        
     }
 }
