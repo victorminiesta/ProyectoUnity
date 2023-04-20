@@ -1,7 +1,7 @@
 
-CATEGORIA 1 GEOGRAFIA
+CATEGORIA 1 GEOGRAFÍA
 
-¿Cuál es el río más largo de España?
+1.¿Cuál es el río más largo de España?
 
 A) Ebro
 B) Tajo
@@ -10,41 +10,50 @@ D) Guadalquivir
 
 La respuesta correcta es A) 
 
-¿Cuál es la montaña más alta de la Península Ibérica?
+2.¿Cuál es la montaña más alta de la Península Ibérica?
 
 A) Monte Perdido
 B) Aneto
 C) Mulhacén
 D) Teide
 
-¿Cuál es el volcán más alto de España?
+La respuesta correcta es C) 
+
+3.¿Cuál es el volcán más alto de España?
 
 A) Monte Gorbea
 B) Monte Teide
 C) Sierra de Cebollera
 D) Monte Pico Viejo
 
+La respuesta correcta es B) 
+
 
 CATEGORIA 2 BIOLOGIA
 
+1.¿Cuál es la función principal de los pulmones en el cuerpo humano?
 
-¿Cuál es la función principal de los pulmones en el cuerpo humano?
 A) Regular el metabolismo
 B) Transportar la sangre
 C) Eliminar los desechos del cuerpo
 D) Facilitar la respiración
+
 La respuesta correcta es D)
 
 
-¿Cuál es la función principal de los pulmones en el cuerpo humano?
-A) Regular el metabolismo
-B) Transportar la sangre
-C) Eliminar los desechos del cuerpo
-D) Facilitar la respiración
+2.¿Qué es la fotosíntesis y en qué organismos se lleva a cabo?
+
+A) El proceso mediante el cual los organismos producen dióxido de carbono a partir de la energía solar. Se lleva a cabo en animales y plantas.
+B) El proceso mediante el cual los organismos producen oxígeno a partir de la energía solar. Se lleva a cabo en animales y plantas.
+C) El proceso mediante el cual los organismos producen energía a partir de la glucosa. Se lleva a cabo en animales y plantas.
+D) El proceso mediante el cual los organismos producen glucosa a partir de la energía solar. Se lleva a cabo en las plantas y en algunas bacterias.
+
+
 La respuesta correcta es D)
 
 
-¿Cuál es el pigmento que da color a la piel humana?
+3.¿Cuál es el pigmento que da color a la piel humana?
+
 A) Clorofila
 B) Melanina
 C) Hemoglobina
@@ -53,10 +62,10 @@ La respuesta correcta es B)
 
 
 
-
 CATEGORIA 3: VIDEOJUEGOS
 
-¿Qué videojuego se centra en la construcción de estructuras con bloques?
+1.¿Qué videojuego se centra en la construcción de estructuras con bloques?
+
 A) Fortnite
 B) Minecraft
 C) Apex Legends
@@ -64,7 +73,8 @@ D) Call of Duty
 La respuesta correcta es B)
 
 
-¿Cuál es el personaje principal en el videojuego de aventura "The Legend of Zelda"?
+2.¿Cuál es el personaje principal en el videojuego de aventura "The Legend of Zelda"?
+
 A) Luigi
 B) Donkey Kong
 C) Link
@@ -72,9 +82,10 @@ D) Zelda
 La respuesta correcta es C)
 
 
-¿Cuál es el juego de carreras más popular en la serie de videojuegos "Mario Kart"?
+3.¿Cuál es el juego de carreras más popular en la serie de videojuegos "Mario Kart"?
+
 A) Mario Kart 64
-B) Mario Kart: Double Dash!!
+B)Mario Kart: Double Dash!!
 C) Mario Kart Wii
 D) Mario Kart 8
 La respuesta correcta es D)
