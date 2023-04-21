@@ -47,8 +47,7 @@ public class script : MonoBehaviour
 
         }
 
-        nombrejugador1.text = jugador1.text;
-        nombrejugador2.text = jugador2.text;
+        
 
     }
     public void fuera()
@@ -72,7 +71,8 @@ public class script : MonoBehaviour
             botonjugar.SetActive(false);
             empezarjuego.SetActive(true);
             aviso.SetActive(false);
-
+            nombrejugador1.text= jugador1.text;
+            nombrejugador2.text = jugador2.text;
         }
         else if (aviso22 == false)
         {
@@ -91,13 +91,12 @@ public class script : MonoBehaviour
     }
     public void girardado()
     {
-        
         numeror = Random.Range(1, 4);
         numero.text = numeror.ToString();
         dado1.SetActive(false);
         dado2.SetActive(false);
         dado3.SetActive(false);
-        Invoke("Realizar", 2f);
+        Invoke("realizar", 2f);
     }
     public void imagendado()
     {
@@ -118,7 +117,7 @@ public class script : MonoBehaviour
     }
     public void realizar(){
         activarpreguntas.SetActive(true);
-    
+        empezarjuego.SetActive(false);
     }
 
     
