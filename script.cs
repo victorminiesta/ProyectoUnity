@@ -14,7 +14,8 @@ public class script : MonoBehaviour
     public GameObject aviso,aviso2;
     int numeror;
     public GameObject dado1, dado2, dado3;
-    public Text nombrejugador1, nombrejugador2; 
+    public Text nombrejugador1, nombrejugador2;
+    public GameObject activarpreguntas;
     void Start()
     {
         
@@ -96,6 +97,7 @@ public class script : MonoBehaviour
         dado1.SetActive(false);
         dado2.SetActive(false);
         dado3.SetActive(false);
+        Invoke("Realizar", 2f);
     }
     public void imagendado()
     {
@@ -114,6 +116,28 @@ public class script : MonoBehaviour
 
         }
     }
+    public void realizar(){
+        activarpreguntas.SetActive(true);
+    
+    }
 
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
