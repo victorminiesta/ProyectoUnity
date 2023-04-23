@@ -120,7 +120,7 @@ public class script : MonoBehaviour
     {
         activarpreguntas.SetActive(true);
         empezarjuego.SetActive(false);
-        index = Random.Range(1, 4);
+        index = Random.Range(0, 3);
         if (numeror == 1)
         {
             Pregunta preguntaGeografia = preguntasGeografia[index];
@@ -130,26 +130,26 @@ public class script : MonoBehaviour
             respuesta2.text = preguntasGeografia[index].respuestas[1];
             respuesta3.text = preguntasGeografia[index].respuestas[2];
             respuesta4.text = preguntasGeografia[index].respuestas[3];
-            if (numeror == 2)
-            {
-                Pregunta preguntaBiologia = preguntasBiologia[index];
-                enunciado.text = preguntaBiologia.pregunta;
-                categoria.text = "Biología";
-                respuesta1.text = preguntasBiologia[index].respuestas[0];
-                respuesta2.text = preguntasBiologia[index].respuestas[1];
-                respuesta3.text = preguntasBiologia[index].respuestas[2];
-                respuesta4.text = preguntasBiologia[index].respuestas[3];
-            }
-            if (numeror == 3)
-            {
-                Pregunta preguntaVideojuegos = preguntasVideojuegos[index];
-                enunciado.text = preguntaVideojuegos.pregunta;
-                categoria.text = "Videojuegos";
-                respuesta1.text = preguntasVideojuegos[index].respuestas[0];
-                respuesta2.text = preguntasVideojuegos[index].respuestas[1];
-                respuesta3.text = preguntasVideojuegos[index].respuestas[2];
-                respuesta4.text = preguntasVideojuegos[index].respuestas[3];
-            }
+        }
+        if (numeror == 2)
+        {
+            Pregunta preguntaBiologia = preguntasBiologia[index];
+            enunciado.text = preguntaBiologia.pregunta;
+            categoria.text = "Biología";
+            respuesta1.text = preguntasBiologia[index].respuestas[0];
+            respuesta2.text = preguntasBiologia[index].respuestas[1];
+            respuesta3.text = preguntasBiologia[index].respuestas[2];
+            respuesta4.text = preguntasBiologia[index].respuestas[3];
+        }
+        if (numeror == 3)
+        {
+            Pregunta preguntaVideojuegos = preguntasVideojuegos[index];
+            enunciado.text = preguntaVideojuegos.pregunta;
+            categoria.text = "Videojuegos";
+            respuesta1.text = preguntasVideojuegos[index].respuestas[0];
+            respuesta2.text = preguntasVideojuegos[index].respuestas[1];
+            respuesta3.text = preguntasVideojuegos[index].respuestas[2];
+            respuesta4.text = preguntasVideojuegos[index].respuestas[3];
         }
     }
    
