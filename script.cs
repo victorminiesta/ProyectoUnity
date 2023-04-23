@@ -311,13 +311,13 @@ public class script : MonoBehaviour
                 {
                     if (preguntasGeografia[index].respuestasCorrectas == bt)
                     {
-                        a.GetComponent<Image>().color = Color.green;
+                        b.GetComponent<Image>().color = Color.green;
                         terminar = 1;
                         geografia.SetActive(true);
                     }
                     else
                     {
-                        a.GetComponent<Image>().color = Color.red;
+                        b.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
                 }
@@ -325,13 +325,13 @@ public class script : MonoBehaviour
                 {
                     if (preguntasBiologia[index].respuestasCorrectas == bt)
                     {
-                        a.GetComponent<Image>().color = Color.green;
+                        b.GetComponent<Image>().color = Color.green;
                         terminar = 1;
                         biologia.SetActive(true);
                     }
                     else
                     {
-                        a.GetComponent<Image>().color = Color.red;
+                        b.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
                 }
@@ -339,13 +339,13 @@ public class script : MonoBehaviour
                 {
                     if (preguntasVideojuegos[index].respuestasCorrectas == bt)
                     {
-                        a.GetComponent<Image>().color = Color.green;
+                        b.GetComponent<Image>().color = Color.green;
                         terminar = 1;
                         videojuegos.SetActive(true);
                     }
                     else
                     {
-                        a.GetComponent<Image>().color = Color.red;
+                        b.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
                 }
@@ -376,13 +376,13 @@ public class script : MonoBehaviour
                 {
                     if (preguntasGeografia[index].respuestasCorrectas == bt)
                     {
-                        a.GetComponent<Image>().color = Color.green;
+                        b.GetComponent<Image>().color = Color.green;
                         terminar = 1;
                         geografia2.SetActive(true);
                     }
                     else
                     {
-                        a.GetComponent<Image>().color = Color.red;
+                        b.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
                 }
@@ -390,13 +390,13 @@ public class script : MonoBehaviour
                 {
                     if (preguntasBiologia[index].respuestasCorrectas == bt)
                     {
-                        a.GetComponent<Image>().color = Color.green;
+                        b.GetComponent<Image>().color = Color.green;
                         terminar = 1;
                         biologia2.SetActive(true);
                     }
                     else
                     {
-                        a.GetComponent<Image>().color = Color.red;
+                        b.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
                 }
@@ -404,13 +404,13 @@ public class script : MonoBehaviour
                 {
                     if (preguntasVideojuegos[index].respuestasCorrectas == bt)
                     {
-                        a.GetComponent<Image>().color = Color.green;
+                        b.GetComponent<Image>().color = Color.green;
                         terminar = 1;
                         videojugos2.SetActive(true);
                     }
                     else
                     {
-                        a.GetComponent<Image>().color = Color.red;
+                        b.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
                 }
@@ -442,13 +442,13 @@ public class script : MonoBehaviour
                 {
                     if (preguntasGeografia[index].respuestasCorrectas == bt)
                     {
-                        a.GetComponent<Image>().color = Color.green;
+                        c.GetComponent<Image>().color = Color.green;
                         terminar = 1;
                         geografia.SetActive(true);
                     }
                     else
                     {
-                        a.GetComponent<Image>().color = Color.red;
+                        c.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
                 }
@@ -456,13 +456,13 @@ public class script : MonoBehaviour
                 {
                     if (preguntasBiologia[index].respuestasCorrectas == bt)
                     {
-                        a.GetComponent<Image>().color = Color.green;
+                        c.GetComponent<Image>().color = Color.green;
                         terminar = 1;
                         biologia.SetActive(true);
                     }
                     else
                     {
-                        a.GetComponent<Image>().color = Color.red;
+                        c.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
                 }
@@ -470,13 +470,13 @@ public class script : MonoBehaviour
                 {
                     if (preguntasVideojuegos[index].respuestasCorrectas == bt)
                     {
-                        a.GetComponent<Image>().color = Color.green;
+                        c.GetComponent<Image>().color = Color.green;
                         terminar = 1;
                         videojuegos.SetActive(true);
                     }
                     else
                     {
-                        a.GetComponent<Image>().color = Color.red;
+                        c.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
                 }
@@ -507,13 +507,13 @@ public class script : MonoBehaviour
                 {
                     if (preguntasGeografia[index].respuestasCorrectas == bt)
                     {
-                        a.GetComponent<Image>().color = Color.green;
+                        c.GetComponent<Image>().color = Color.green;
                         terminar = 1;
                         geografia2.SetActive(true);
                     }
                     else
                     {
-                        a.GetComponent<Image>().color = Color.red;
+                        c.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
                 }
@@ -521,13 +521,13 @@ public class script : MonoBehaviour
                 {
                     if (preguntasBiologia[index].respuestasCorrectas == bt)
                     {
-                        a.GetComponent<Image>().color = Color.green;
+                        c.GetComponent<Image>().color = Color.green;
                         terminar = 1;
                         biologia2.SetActive(true);
                     }
                     else
                     {
-                        a.GetComponent<Image>().color = Color.red;
+                        c.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
                 }
@@ -535,13 +535,13 @@ public class script : MonoBehaviour
                 {
                     if (preguntasVideojuegos[index].respuestasCorrectas == bt)
                     {
-                        a.GetComponent<Image>().color = Color.green;
+                        c.GetComponent<Image>().color = Color.green;
                         terminar = 1;
                         videojugos2.SetActive(true);
                     }
                     else
                     {
-                        a.GetComponent<Image>().color = Color.red;
+                        c.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
                 }
@@ -574,13 +574,13 @@ public class script : MonoBehaviour
                 {
                     if (preguntasGeografia[index].respuestasCorrectas == bt)
                     {
-                        a.GetComponent<Image>().color = Color.green;
+                        d.GetComponent<Image>().color = Color.green;
                         terminar = 1;
                         geografia.SetActive(true);
                     }
                     else
                     {
-                        a.GetComponent<Image>().color = Color.red;
+                        d.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
                 }
@@ -588,13 +588,13 @@ public class script : MonoBehaviour
                 {
                     if (preguntasBiologia[index].respuestasCorrectas == bt)
                     {
-                        a.GetComponent<Image>().color = Color.green;
+                        d.GetComponent<Image>().color = Color.green;
                         terminar = 1;
                         biologia.SetActive(true);
                     }
                     else
                     {
-                        a.GetComponent<Image>().color = Color.red;
+                        d.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
                 }
@@ -602,13 +602,13 @@ public class script : MonoBehaviour
                 {
                     if (preguntasVideojuegos[index].respuestasCorrectas == bt)
                     {
-                        a.GetComponent<Image>().color = Color.green;
+                        d.GetComponent<Image>().color = Color.green;
                         terminar = 1;
                         videojuegos.SetActive(true);
                     }
                     else
                     {
-                        a.GetComponent<Image>().color = Color.red;
+                        d.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
                 }
@@ -639,13 +639,13 @@ public class script : MonoBehaviour
                 {
                     if (preguntasGeografia[index].respuestasCorrectas == bt)
                     {
-                        a.GetComponent<Image>().color = Color.green;
+                        d.GetComponent<Image>().color = Color.green;
                         terminar = 1;
                         geografia2.SetActive(true);
                     }
                     else
                     {
-                        a.GetComponent<Image>().color = Color.red;
+                        d.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
                 }
@@ -653,13 +653,13 @@ public class script : MonoBehaviour
                 {
                     if (preguntasBiologia[index].respuestasCorrectas == bt)
                     {
-                        a.GetComponent<Image>().color = Color.green;
+                        d.GetComponent<Image>().color = Color.green;
                         terminar = 1;
                         biologia2.SetActive(true);
                     }
                     else
                     {
-                        a.GetComponent<Image>().color = Color.red;
+                        d.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
                 }
@@ -667,13 +667,13 @@ public class script : MonoBehaviour
                 {
                     if (preguntasVideojuegos[index].respuestasCorrectas == bt)
                     {
-                        a.GetComponent<Image>().color = Color.green;
+                        d.GetComponent<Image>().color = Color.green;
                         terminar = 1;
                         videojugos2.SetActive(true);
                     }
                     else
                     {
-                        a.GetComponent<Image>().color = Color.red;
+                        d.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
                 }
