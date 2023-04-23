@@ -190,8 +190,8 @@ public class script : MonoBehaviour
     public List<Pregunta> preguntasBiologia = new List <Pregunta>()
     {
         new Pregunta(){
-            pregunta = "¿Qué es la fotosíntesis y en qué organismos se lleva a cabo?",
-            respuestas = new string[] { "El proceso mediante el cual los organismos producen dióxido de carbono a partir de la energía solar. Se lleva a cabo en animales y plantas.", "El proceso mediante el cual los organismos producen oxígeno a partir de la energía solar. Se lleva a cabo en animales y plantas.", "El proceso mediante el cual los organismos producen energía a partir de la glucosa. Se lleva a cabo en animales y plantas.", "El proceso mediante el cual los organismos producen glucosa a partir de la energía solar. Se lleva a cabo en las plantas y en algunas bacterias."},
+            pregunta = "¿Cuál de los siguientes es el principal tipo de célula en el cuerpo humano?",
+            respuestas = new string[] { "Células Nerviosas", "Células Saguíneas", "Células Musculares", "Células epiteliales"},
             respuestasCorrectas = 4,
         },
         new Pregunta(){
