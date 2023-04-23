@@ -167,48 +167,49 @@ public class script : MonoBehaviour
             respuesta4.text = preguntasVideojuegos[index].respuestas[3];
         }
     }
-    public void Onclicka()
+    public void OnClickA()
     {
-
-        while(jugador == 1) { 
-        while (terminar == 0) { 
-            bt = 1;
-               
-            if (numeror == 1)
+        if (jugador == 1)
+        {
+            // Jugador 1 activo
+            while (terminar == 0)
             {
-                if (preguntasGeografia[index].respuestasCorrectas == bt)
+                bt = 1;
+                if (numeror == 1)
                 {
-                    a.GetComponent<Image>().color = Color.green;
-                    terminar = 1;
+                    if (preguntasGeografia[index].respuestasCorrectas == bt)
+                    {
+                        a.GetComponent<Image>().color = Color.green;
+                        terminar = 1;
                         geografia.SetActive(true);
-                    
+                    }
+                    else
+                    {
+                        a.GetComponent<Image>().color = Color.red;
+                        terminar = 2;
+                    }
                 }
-                else
+                else if (numeror == 2)
                 {
-                    a.GetComponent<Image>().color = Color.red;
-                    terminar = 2;
-                }
-            }
-            if (numeror == 2)
-            {
-                if (preguntasBiologia[index].respuestasCorrectas == bt)
-                {
-                    a.GetComponent<Image>().color = Color.green;
-                    terminar = 1;
+                    if (preguntasBiologia[index].respuestasCorrectas == bt)
+                    {
+                        a.GetComponent<Image>().color = Color.green;
+                        terminar = 1;
                         biologia.SetActive(true);
+                    }
+                    else
+                    {
+                        a.GetComponent<Image>().color = Color.red;
+                        terminar = 2;
+                    }
                 }
-                else
-                {
-                    a.GetComponent<Image>().color = Color.red;
-                    terminar = 2;
-                }
-                if (numeror == 3)
+                else if (numeror == 3)
                 {
                     if (preguntasVideojuegos[index].respuestasCorrectas == bt)
                     {
                         a.GetComponent<Image>().color = Color.green;
                         terminar = 1;
-                            videojuegos.SetActive(true);
+                        videojuegos.SetActive(true);
                     }
                     else
                     {
@@ -217,34 +218,28 @@ public class script : MonoBehaviour
                     }
                 }
             }
+            if (terminar == 1)
+            {
+                contador1++;
+                Invoke("girardado", 2f);
+                Invoke("realizar", 2f);
+                terminar = 0;
+                jugador = 2;
+            }
+            else
+            {
+                Invoke("girardado", 2f);
+                Invoke("realizar", 2f);
+                terminar = 0;
+                jugador = 2;
+            }
         }
-
-        if (terminar == 1)
+        else if (jugador == 2)
         {
-            contador1++;
-                Invoke("girardado", 2f);
-                Invoke("realizar", 2f);
-
-                terminar = 0;
-                jugador = 2;
-            }
-        else
-        {
-                Invoke("girardado", 2f);
-                Invoke("realizar", 2f);
-            
-
-                terminar = 0;
-                jugador = 2;
-            }
-            
-           
-        } while (jugador == 2)
-        {
+            // Jugador 2 activo
             while (terminar == 0)
             {
                 bt = 1;
-               
                 if (numeror == 1)
                 {
                     if (preguntasGeografia[index].respuestasCorrectas == bt)
@@ -252,7 +247,6 @@ public class script : MonoBehaviour
                         a.GetComponent<Image>().color = Color.green;
                         terminar = 1;
                         geografia2.SetActive(true);
-
                     }
                     else
                     {
@@ -260,7 +254,7 @@ public class script : MonoBehaviour
                         terminar = 2;
                     }
                 }
-                if (numeror == 2)
+                else if (numeror == 2)
                 {
                     if (preguntasBiologia[index].respuestasCorrectas == bt)
                     {
@@ -273,40 +267,38 @@ public class script : MonoBehaviour
                         a.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
-                    if (numeror == 3)
+                }
+                else if (numeror == 3)
+                {
+                    if (preguntasVideojuegos[index].respuestasCorrectas == bt)
                     {
-                        if (preguntasVideojuegos[index].respuestasCorrectas == bt)
-                        {
-                            a.GetComponent<Image>().color = Color.green;
-                            terminar = 1;
-                            videojugos2.SetActive(true);
-                        }
-                        else
-                        {
-                            a.GetComponent<Image>().color = Color.red;
-                            terminar = 2;
-                        }
+                        a.GetComponent<Image>().color = Color.green;
+                        terminar = 1;
+                        videojugos2.SetActive(true);
+                    }
+                    else
+                    {
+                        a.GetComponent<Image>().color = Color.red;
+                        terminar = 2;
                     }
                 }
             }
-
             if (terminar == 1)
             {
                 contador2++;
                 Invoke("realizar", 2f);
-
                 terminar = 0;
                 jugador = 1;
             }
             else
             {
                 Invoke("realizar", 2f);
-
                 terminar = 0;
                 jugador = 1;
             }
         }
-        }
+    }
+
     public void Onclickb()
     {
         while (jugador == 1)
