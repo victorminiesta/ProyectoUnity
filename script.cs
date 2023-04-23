@@ -28,7 +28,7 @@ public class script : MonoBehaviour
     int contador2=0;
     int jugador = 1;
     public GameObject geografia, biologia, videojuegos,geografia2,biologia2,videojugos2;
-    int [] cuenta;
+    public GameObject paneljugador1, paneljugador2;
     
     void Start()
     {
@@ -60,9 +60,16 @@ public class script : MonoBehaviour
             aviso22 = false;
 
         }
+        if(biologia.gameObject.activeSelf && geografia.gameObject.activeSelf && videojuegos.gameObject.activeSelf)
+        {
+            paneljugador1.SetActive(true);
+        }
+        if (biologia2.gameObject.activeSelf && geografia2.gameObject.activeSelf && videojugos2.gameObject.activeSelf)
+        {
+            paneljugador2.SetActive(true);
+        }
 
-        
-        
+
     }
     public void fuera()
     {
