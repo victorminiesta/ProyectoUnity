@@ -27,6 +27,9 @@ public class script : MonoBehaviour
     int contador1=0;
     int contador2=0;
     int jugador = 1;
+    public GameObject geografia, biologia, videojuegos,geografia2,biologia2,videojugos2;
+    int [] cuenta;
+    int i = 0;
     void Start()
     {
         
@@ -125,6 +128,8 @@ public class script : MonoBehaviour
     }
     public void realizar()
     {
+        cuenta[i] = numeror;
+        
         a.GetComponent<Image>().color = Color.white;
         b.GetComponent<Image>().color = Color.white;
         c.GetComponent<Image>().color = Color.white;
@@ -168,12 +173,17 @@ public class script : MonoBehaviour
         while(jugador == 1) { 
         while (terminar == 0) { 
             bt = 1;
+                if (numeror == cuenta[i - 1])
+                {
+                    numeror = Random.Range(0, 4);
+                }
             if (numeror == 1)
             {
                 if (preguntasGeografia[index].respuestasCorrectas == bt)
                 {
                     a.GetComponent<Image>().color = Color.green;
                     terminar = 1;
+                        geografia.SetActive(true);
                     
                 }
                 else
@@ -188,6 +198,7 @@ public class script : MonoBehaviour
                 {
                     a.GetComponent<Image>().color = Color.green;
                     terminar = 1;
+                        biologia.SetActive(true);
                 }
                 else
                 {
@@ -200,6 +211,7 @@ public class script : MonoBehaviour
                     {
                         a.GetComponent<Image>().color = Color.green;
                         terminar = 1;
+                            videojuegos.SetActive(true);
                     }
                     else
                     {
@@ -224,17 +236,23 @@ public class script : MonoBehaviour
             terminar = 0;
         }
             jugador = 2;
+            i++;
         } while (jugador == 2)
         {
             while (terminar == 0)
             {
                 bt = 1;
+                if (numeror == cuenta[i - 1])
+                {
+                    numeror = Random.Range(0, 4);
+                }
                 if (numeror == 1)
                 {
                     if (preguntasGeografia[index].respuestasCorrectas == bt)
                     {
                         a.GetComponent<Image>().color = Color.green;
                         terminar = 1;
+                        geografia2.SetActive(true);
 
                     }
                     else
@@ -249,6 +267,7 @@ public class script : MonoBehaviour
                     {
                         a.GetComponent<Image>().color = Color.green;
                         terminar = 1;
+                        biologia2.SetActive(true);
                     }
                     else
                     {
@@ -261,6 +280,7 @@ public class script : MonoBehaviour
                         {
                             a.GetComponent<Image>().color = Color.green;
                             terminar = 1;
+                            videojugos2.SetActive(true);
                         }
                         else
                         {
@@ -273,7 +293,7 @@ public class script : MonoBehaviour
 
             if (terminar == 1)
             {
-                contador1++;
+                contador2++;
                 Invoke("realizar", 2f);
 
                 terminar = 0;
@@ -285,6 +305,7 @@ public class script : MonoBehaviour
                 terminar = 0;
             }
             jugador = 1;
+            i++;
         }
         }
     public void Onclickb()
@@ -399,7 +420,7 @@ public class script : MonoBehaviour
 
             if (terminar == 1)
             {
-                contador1++;
+                contador2++;
                 Invoke("realizar", 2f);
 
                 terminar = 0;
@@ -526,7 +547,7 @@ public class script : MonoBehaviour
 
             if (terminar == 1)
             {
-                contador1++;
+                contador2++;
                 Invoke("realizar", 2f);
 
                 terminar = 0;
@@ -571,7 +592,7 @@ public class script : MonoBehaviour
                     }
                     else
                     {
-                        b.GetComponent<Image>().color = Color.red;
+                        d.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
                     if (numeror == 3)
