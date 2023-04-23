@@ -143,8 +143,8 @@ public class script : MonoBehaviour
             categoria.text = "Geografía";
             respuesta1.text = preguntasGeografia[index].respuestas[0];
             respuesta2.text = preguntasGeografia[index].respuestas[1];
-            respuesta3.text = preguntasGeografia[index].respuestas[2];
-            respuesta4.text = preguntasGeografia[index].respuestas[3];
+            respuesta3.text = preguntasGeografia[index].respuestas[3];
+            respuesta4.text = preguntasGeografia[index].respuestas[2];
         }
         if (numeror == 2)
         {
@@ -153,8 +153,8 @@ public class script : MonoBehaviour
             categoria.text = "Biología";
             respuesta1.text = preguntasBiologia[index].respuestas[0];
             respuesta2.text = preguntasBiologia[index].respuestas[1];
-            respuesta3.text = preguntasBiologia[index].respuestas[2];
-            respuesta4.text = preguntasBiologia[index].respuestas[3];
+            respuesta3.text = preguntasBiologia[index].respuestas[3];
+            respuesta4.text = preguntasBiologia[index].respuestas[2];
         }
         if (numeror == 3)
         {
@@ -163,8 +163,8 @@ public class script : MonoBehaviour
             categoria.text = "Videojuegos";
             respuesta1.text = preguntasVideojuegos[index].respuestas[0];
             respuesta2.text = preguntasVideojuegos[index].respuestas[1];
-            respuesta3.text = preguntasVideojuegos[index].respuestas[2];
-            respuesta4.text = preguntasVideojuegos[index].respuestas[3];
+            respuesta3.text = preguntasVideojuegos[index].respuestas[3];
+            respuesta4.text = preguntasVideojuegos[index].respuestas[2];
         }
     }
     public void OnClickA()
