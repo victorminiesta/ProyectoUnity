@@ -306,7 +306,7 @@ public class script : MonoBehaviour
             // Jugador 1 activo
             while (terminar == 0)
             {
-                bt = 1;
+                bt = 2;
                 if (numeror == 1)
                 {
                     if (preguntasGeografia[index].respuestasCorrectas == bt)
@@ -371,7 +371,7 @@ public class script : MonoBehaviour
             // Jugador 2 activo
             while (terminar == 0)
             {
-                bt = 1;
+                bt = 2;
                 if (numeror == 1)
                 {
                     if (preguntasGeografia[index].respuestasCorrectas == bt)
@@ -437,7 +437,7 @@ public class script : MonoBehaviour
             // Jugador 1 activo
             while (terminar == 0)
             {
-                bt = 1;
+                bt = 3;
                 if (numeror == 1)
                 {
                     if (preguntasGeografia[index].respuestasCorrectas == bt)
@@ -502,7 +502,7 @@ public class script : MonoBehaviour
             // Jugador 2 activo
             while (terminar == 0)
             {
-                bt = 1;
+                bt = 3;
                 if (numeror == 1)
                 {
                     if (preguntasGeografia[index].respuestasCorrectas == bt)
@@ -569,7 +569,7 @@ public class script : MonoBehaviour
             // Jugador 1 activo
             while (terminar == 0)
             {
-                bt = 1;
+                bt = 4;
                 if (numeror == 1)
                 {
                     if (preguntasGeografia[index].respuestasCorrectas == bt)
@@ -634,7 +634,7 @@ public class script : MonoBehaviour
             // Jugador 2 activo
             while (terminar == 0)
             {
-                bt = 1;
+                bt = 4;
                 if (numeror == 1)
                 {
                     if (preguntasGeografia[index].respuestasCorrectas == bt)
