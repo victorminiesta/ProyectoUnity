@@ -125,6 +125,10 @@ public class script : MonoBehaviour
     }
     public void realizar()
     {
+        a.GetComponent<Image>().color = Color.white;
+        b.GetComponent<Image>().color = Color.white;
+        c.GetComponent<Image>().color = Color.white;
+        d.GetComponent<Image>().color = Color.white;
         activarpreguntas.SetActive(true);
         empezarjuego.SetActive(false);
         index = Random.Range(0, 3);
@@ -209,13 +213,13 @@ public class script : MonoBehaviour
         {
             contador1++;
             Invoke("realizar", 2f);
-            a.GetComponent<Image>().color = Color.white;
+            
             terminar = 0;
         }
         else
         {
             Invoke("realizar", 2f);
-            a.GetComponent<Image>().color = Color.white;
+            
             terminar = 0;
         }
 
