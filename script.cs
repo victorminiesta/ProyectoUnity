@@ -122,25 +122,25 @@ public class script : MonoBehaviour
         if (numeror == 1)
         {
             Pregunta preguntaGeografia = preguntasGeografia[index];
-            respuesta1.text = preguntasGeografia[index].respuestas[1];
-            respuesta2.text = preguntasGeografia[index].respuestas[2];
-            respuesta3.text = preguntasGeografia[index].respuestas[3];
-            respuesta4.text = preguntasGeografia[index].respuestas[4];
+            respuesta1.text = preguntasGeografia[index].respuestas[0];
+            respuesta2.text = preguntasGeografia[index].respuestas[1];
+            respuesta3.text = preguntasGeografia[index].respuestas[2];
+            respuesta4.text = preguntasGeografia[index].respuestas[3];
             if (numeror == 2)
             {
                 Pregunta preguntaBiologia = preguntasBiologia[index];
-                respuesta1.text = preguntasGeografia[index].respuestas[1];
-                respuesta2.text = preguntasGeografia[index].respuestas[2];
-                respuesta3.text = preguntasGeografia[index].respuestas[3];
-                respuesta4.text = preguntasGeografia[index].respuestas[4];
+                respuesta1.text = preguntasGeografia[index].respuestas[0];
+                respuesta2.text = preguntasGeografia[index].respuestas[1];
+                respuesta3.text = preguntasGeografia[index].respuestas[2];
+                respuesta4.text = preguntasGeografia[index].respuestas[3];
             }
             if (numeror == 3)
             {
                 Pregunta preguntaVideojuegos = preguntasVideojuegos[index];
-                respuesta1.text = preguntasGeografia[index].respuestas[1];
-                respuesta2.text = preguntasGeografia[index].respuestas[2];
-                respuesta3.text = preguntasGeografia[index].respuestas[3];
-                respuesta4.text = preguntasGeografia[index].respuestas[4];
+                respuesta1.text = preguntasGeografia[index].respuestas[0];
+                respuesta2.text = preguntasGeografia[index].respuestas[1];
+                respuesta3.text = preguntasGeografia[index].respuestas[2];
+                respuesta4.text = preguntasGeografia[index].respuestas[3];
             }
         }
     }
