@@ -17,6 +17,7 @@ public class script : MonoBehaviour
     public Text nombrejugador1, nombrejugador2;
     public GameObject activarpreguntas;
     int index;
+    public Text enunciado;
     public Text respuesta1, respuesta2, respuesta3, respuesta4;
     public GameObject a, b, c, d;
     void Start()
@@ -97,7 +98,7 @@ public class script : MonoBehaviour
         dado1.SetActive(false);
         dado2.SetActive(false);
         dado3.SetActive(false);
-        Invoke("realizar", 2f);
+        Invoke("realizar", 1f);
     }
     public void imagendado()
     {
@@ -118,10 +119,11 @@ public class script : MonoBehaviour
     {
         activarpreguntas.SetActive(true);
         empezarjuego.SetActive(false);
-        index = Random.Range(0, 3);
+        index = Random.Range(1, 4);
         if (numeror == 1)
         {
             Pregunta preguntaGeografia = preguntasGeografia[index];
+            enunciado.text = preguntaGeografia.pregunta;
             respuesta1.text = preguntasGeografia[index].respuestas[0];
             respuesta2.text = preguntasGeografia[index].respuestas[1];
             respuesta3.text = preguntasGeografia[index].respuestas[2];
@@ -129,6 +131,7 @@ public class script : MonoBehaviour
             if (numeror == 2)
             {
                 Pregunta preguntaBiologia = preguntasBiologia[index];
+                enunciado.text = preguntaBiologia.pregunta;
                 respuesta1.text = preguntasBiologia[index].respuestas[0];
                 respuesta2.text = preguntasBiologia[index].respuestas[1];
                 respuesta3.text = preguntasBiologia[index].respuestas[2];
@@ -137,6 +140,7 @@ public class script : MonoBehaviour
             if (numeror == 3)
             {
                 Pregunta preguntaVideojuegos = preguntasVideojuegos[index];
+                enunciado.text = preguntaVideojuegos.pregunta;
                 respuesta1.text = preguntasVideojuegos[index].respuestas[0];
                 respuesta2.text = preguntasVideojuegos[index].respuestas[1];
                 respuesta3.text = preguntasVideojuegos[index].respuestas[2];
