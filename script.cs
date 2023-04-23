@@ -233,7 +233,7 @@ public class script : MonoBehaviour
             terminar = 0;
         }
             jugador = 2;
-            i++;
+            
         } while (jugador == 2)
         {
             while (terminar == 0)
@@ -299,7 +299,7 @@ public class script : MonoBehaviour
                 terminar = 0;
             }
             jugador = 1;
-            i++;
+           
         }
         }
     public void Onclickb()
