@@ -228,14 +228,14 @@ public class script : MonoBehaviour
             if (terminar == 1)
             {
                 contador1++;
-                Invoke("girardado", 2f);
+                
                 Invoke("realizar", 2f);
                 terminar = 0;
                 jugador = 2;
             }
             else
             {
-                Invoke("girardado", 2f);
+                
                 Invoke("realizar", 2f);
                 terminar = 0;
                 jugador = 2;
@@ -360,14 +360,14 @@ public class script : MonoBehaviour
             if (terminar == 1)
             {
                 contador1++;
-                Invoke("girardado", 2f);
+                
                 Invoke("realizar", 2f);
                 terminar = 0;
                 jugador = 2;
             }
             else
             {
-                Invoke("girardado", 2f);
+                
                 Invoke("realizar", 2f);
                 terminar = 0;
                 jugador = 2;
@@ -491,14 +491,14 @@ public class script : MonoBehaviour
             if (terminar == 1)
             {
                 contador1++;
-                Invoke("girardado", 2f);
+                
                 Invoke("realizar", 2f);
                 terminar = 0;
                 jugador = 2;
             }
             else
             {
-                Invoke("girardado", 2f);
+                
                 Invoke("realizar", 2f);
                 terminar = 0;
                 jugador = 2;
@@ -623,14 +623,14 @@ public class script : MonoBehaviour
             if (terminar == 1)
             {
                 contador1++;
-                Invoke("girardado", 2f);
+                
                 Invoke("realizar", 2f);
                 terminar = 0;
                 jugador = 2;
             }
             else
             {
-                Invoke("girardado", 2f);
+                
                 Invoke("realizar", 2f);
                 terminar = 0;
                 jugador = 2;
