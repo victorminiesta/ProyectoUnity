@@ -222,16 +222,19 @@ public class script : MonoBehaviour
         if (terminar == 1)
         {
             contador1++;
-            Invoke("realizar", 2f);
-            
-            terminar = 0;
+                Invoke("girardado", 2f);
+                Invoke("realizar", 2f);
+
+                terminar = 0;
                 jugador = 2;
             }
         else
         {
-            Invoke("realizar", 2f);
+                Invoke("girardado", 2f);
+                Invoke("realizar", 2f);
             
-            terminar = 0;
+
+                terminar = 0;
                 jugador = 2;
             }
             
@@ -302,8 +305,6 @@ public class script : MonoBehaviour
                 terminar = 0;
                 jugador = 1;
             }
-            
-           
         }
         }
     public void Onclickb()
