@@ -18,6 +18,7 @@ public class script : MonoBehaviour
     public GameObject activarpreguntas;
     int index;
     public Text enunciado;
+    public Text categoria;
     public Text respuesta1, respuesta2, respuesta3, respuesta4;
     public GameObject a, b, c, d;
     void Start()
@@ -124,6 +125,7 @@ public class script : MonoBehaviour
         {
             Pregunta preguntaGeografia = preguntasGeografia[index];
             enunciado.text = preguntaGeografia.pregunta;
+            categoria.text = "Geografía";
             respuesta1.text = preguntasGeografia[index].respuestas[0];
             respuesta2.text = preguntasGeografia[index].respuestas[1];
             respuesta3.text = preguntasGeografia[index].respuestas[2];
@@ -132,6 +134,7 @@ public class script : MonoBehaviour
             {
                 Pregunta preguntaBiologia = preguntasBiologia[index];
                 enunciado.text = preguntaBiologia.pregunta;
+                categoria.text = "Biología";
                 respuesta1.text = preguntasBiologia[index].respuestas[0];
                 respuesta2.text = preguntasBiologia[index].respuestas[1];
                 respuesta3.text = preguntasBiologia[index].respuestas[2];
@@ -141,6 +144,7 @@ public class script : MonoBehaviour
             {
                 Pregunta preguntaVideojuegos = preguntasVideojuegos[index];
                 enunciado.text = preguntaVideojuegos.pregunta;
+                categoria.text = "Videojuegos";
                 respuesta1.text = preguntasVideojuegos[index].respuestas[0];
                 respuesta2.text = preguntasVideojuegos[index].respuestas[1];
                 respuesta3.text = preguntasVideojuegos[index].respuestas[2];
