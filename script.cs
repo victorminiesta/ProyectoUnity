@@ -29,6 +29,7 @@ public class script : MonoBehaviour
     int jugador = 1;
     public GameObject geografia, biologia, videojuegos,geografia2,biologia2,videojugos2;
     public GameObject paneljugador1, paneljugador2;
+    public Text nj, nj2;
     
     void Start()
     {
@@ -108,6 +109,8 @@ public class script : MonoBehaviour
         }
         setjugador1.text = jugador1.text;
         setjugador2.text = jugador2.text;
+        nj.text = jugador1.text;
+        nj2.text = jugador2.text;
     }
     public void girardado()
     {
