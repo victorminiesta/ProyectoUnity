@@ -16,6 +16,9 @@ public class script : MonoBehaviour
     public GameObject dado1, dado2, dado3;
     public Text nombrejugador1, nombrejugador2;
     public GameObject activarpreguntas;
+    int index;
+    public Text respuesta1, respuesta2, respuesta3, respuesta4;
+    public GameObject a, b, c, d;
     void Start()
     {
         
@@ -115,15 +118,41 @@ public class script : MonoBehaviour
     {
         activarpreguntas.SetActive(true);
         empezarjuego.SetActive(false);
+        index = Random.Range(0, 3);
+        if (numeror == 1)
+        {
+            Pregunta preguntaGeografia = preguntasGeografia[index];
+            respuesta1.text = preguntasGeografia[index].respuestas[1];
+            respuesta2.text = preguntasGeografia[index].respuestas[2];
+            respuesta3.text = preguntasGeografia[index].respuestas[3];
+            respuesta4.text = preguntasGeografia[index].respuestas[4];
+            if (numeror == 2)
+            {
+                Pregunta preguntaBiologia = preguntasBiologia[index];
+                respuesta1.text = preguntasGeografia[index].respuestas[1];
+                respuesta2.text = preguntasGeografia[index].respuestas[2];
+                respuesta3.text = preguntasGeografia[index].respuestas[3];
+                respuesta4.text = preguntasGeografia[index].respuestas[4];
+            }
+            if (numeror == 3)
+            {
+                Pregunta preguntaVideojuegos = preguntasVideojuegos[index];
+                respuesta1.text = preguntasGeografia[index].respuestas[1];
+                respuesta2.text = preguntasGeografia[index].respuestas[2];
+                respuesta3.text = preguntasGeografia[index].respuestas[3];
+                respuesta4.text = preguntasGeografia[index].respuestas[4];
+            }
+        }
     }
+   
 
     public class Pregunta 
     {
         public string pregunta;
-        public string[] respuestas;
+        public string [] respuestas;
         public int respuestasCorrectas;
     }
-
+    
     /*// Crear una instancia de la clase Random
     Random preguntaAleatoria = new Random();
 
