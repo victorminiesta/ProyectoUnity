@@ -20,7 +20,7 @@ public class script : MonoBehaviour
     public Text enunciado;
     public Text categoria;
     public Text respuesta1, respuesta2, respuesta3, respuesta4;
-    public Button a, b, c, d;
+    public GameObject a, b, c, d;
     public Text setjugador1, setjugador2;
     public int bt;
     void Start()
@@ -162,32 +162,32 @@ public class script : MonoBehaviour
         {
             if(preguntasGeografia[index].respuestasCorrectas == bt)
             {
-                GetComponent<Image>().color = Color.green;
+                a.GetComponent<Image>().color = Color.green;
             }
             else
             {
-                GetComponent<Image>().color = Color.red;
+                a.GetComponent<Image>().color = Color.red;
             }
         }
         if (numeror == 2)
         {
             if (preguntasBiologia[index].respuestasCorrectas == bt)
             {
-                GetComponent<Image>().color = Color.green;
+                a.GetComponent<Image>().color = Color.green;
             }
             else
             {
-                GetComponent<Image>().color = Color.red;
+                a.GetComponent<Image>().color = Color.red;
             }
             if (numeror == 3)
             {
                 if (preguntasVideojuegos[index].respuestasCorrectas == bt)
                 {
-                    GetComponent<Image>().color = Color.green;
+                    a.GetComponent<Image>().color = Color.green;
                 }
                 else
                 {
-                    GetComponent<Image>().color = Color.red;
+                    a.GetComponent<Image>().color = Color.red;
                 }
             }
         }
@@ -199,32 +199,32 @@ public class script : MonoBehaviour
         {
             if (preguntasGeografia[index].respuestasCorrectas == bt)
             {
-                GetComponent<Image>().color = Color.green;
+                b.GetComponent<Image>().color = Color.green;
             }
             else
             {
-                GetComponent<Image>().color = Color.red;
+                b.GetComponent<Image>().color = Color.red;
             }
         }
         if (numeror == 2)
         {
             if (preguntasBiologia[index].respuestasCorrectas == bt)
             {
-                GetComponent<Image>().color = Color.green;
+                b.GetComponent<Image>().color = Color.green;
             }
             else
             {
-                GetComponent<Image>().color = Color.red;
+                b.GetComponent<Image>().color = Color.red;
             }
             if (numeror == 3)
             {
                 if (preguntasVideojuegos[index].respuestasCorrectas == bt)
                 {
-                    GetComponent<Image>().color = Color.green;
+                    b.GetComponent<Image>().color = Color.green;
                 }
                 else
                 {
-                    GetComponent<Image>().color = Color.red;
+                    b.GetComponent<Image>().color = Color.red;
                 }
             }
         }
@@ -237,32 +237,32 @@ public class script : MonoBehaviour
         {
             if (preguntasGeografia[index].respuestasCorrectas == bt)
             {
-                GetComponent<Image>().color = Color.green;
+                c.GetComponent<Image>().color = Color.green;
             }
             else
             {
-                GetComponent<Image>().color = Color.red;
+                c.GetComponent<Image>().color = Color.red;
             }
         }
         if (numeror == 2)
         {
             if (preguntasBiologia[index].respuestasCorrectas == bt)
             {
-                GetComponent<Image>().color = Color.green;
+                c.GetComponent<Image>().color = Color.green;
             }
             else
             {
-                GetComponent<Image>().color = Color.red;
+                c.GetComponent<Image>().color = Color.red;
             }
             if (numeror == 3)
             {
                 if (preguntasVideojuegos[index].respuestasCorrectas == bt)
                 {
-                    GetComponent<Image>().color = Color.green;
+                    c.GetComponent<Image>().color = Color.green;
                 }
                 else
                 {
-                    GetComponent<Image>().color = Color.red;
+                    c.GetComponent<Image>().color = Color.red;
                 }
             }
         }
@@ -275,32 +275,32 @@ public class script : MonoBehaviour
         {
             if (preguntasGeografia[index].respuestasCorrectas == bt)
             {
-                GetComponent<Image>().color = Color.green;
+                d.GetComponent<Image>().color = Color.green;
             }
             else
             {
-                GetComponent<Image>().color = Color.red;
+                d.GetComponent<Image>().color = Color.red;
             }
         }
         if (numeror == 2)
         {
             if (preguntasBiologia[index].respuestasCorrectas == bt)
             {
-                GetComponent<Image>().color = Color.green;
+                d.GetComponent<Image>().color = Color.green;
             }
             else
             {
-                GetComponent<Image>().color = Color.red;
+                d.GetComponent<Image>().color = Color.red;
             }
             if (numeror == 3)
             {
                 if (preguntasVideojuegos[index].respuestasCorrectas == bt)
                 {
-                    GetComponent<Image>().color = Color.green;
+                    d.GetComponent<Image>().color = Color.green;
                 }
                 else
                 {
-                    GetComponent<Image>().color = Color.red;
+                    d.GetComponent<Image>().color = Color.red;
                 }
             }
         }
