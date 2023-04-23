@@ -174,7 +174,7 @@ public class script : MonoBehaviour
                 else
                 {
                     a.GetComponent<Image>().color = Color.red;
-                   
+                    terminar = 2;
                 }
             }
             if (numeror == 2)
@@ -187,7 +187,7 @@ public class script : MonoBehaviour
                 else
                 {
                     a.GetComponent<Image>().color = Color.red;
-                    
+                    terminar = 2;
                 }
                 if (numeror == 3)
                 {
@@ -199,7 +199,7 @@ public class script : MonoBehaviour
                     else
                     {
                         a.GetComponent<Image>().color = Color.red;
-                        
+                        terminar = 2;
                     }
                 }
             }
@@ -210,11 +210,13 @@ public class script : MonoBehaviour
             contador1++;
             Invoke("realizar", 2f);
             a.GetComponent<Image>().color = Color.white;
+            terminar = 0;
         }
         else
         {
             Invoke("realizar", 2f);
             a.GetComponent<Image>().color = Color.white;
+            terminar = 0;
         }
 
     }
