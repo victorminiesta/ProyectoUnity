@@ -124,6 +124,21 @@ public class script : MonoBehaviour
         public int respuestasCorrectas;
     }
 
+    /*// Crear una instancia de la clase Random
+    Random preguntaAleatoria = new Random();
+
+    // Obtener una pregunta aleatoria de la lista de Geografía
+    int index = preguntaAleatoria.Next(preguntasGeografia.Count);
+    Pregunta preguntaGeografia = preguntasGeografia[index];
+
+    // Obtener una pregunta aleatoria de la lista de Biología
+    index = preguntaAleatoria.Next(preguntasBiologia.Count);
+    Pregunta preguntaBiologia = preguntasBiologia[index];
+
+    // Obtener una pregunta aleatoria de la lista de Videojuegos
+    index = preguntaAleatoria.Next(preguntasVideojuegos.Count);
+    Pregunta preguntaVideojuegos = preguntasVideojuegos[index];
+    */
     public List<Pregunta> preguntasGeografia = new List <Pregunta>()
     {
         new Pregunta(){
