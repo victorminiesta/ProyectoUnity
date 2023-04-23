@@ -29,7 +29,7 @@ public class script : MonoBehaviour
     int jugador = 1;
     public GameObject geografia, biologia, videojuegos,geografia2,biologia2,videojugos2;
     int [] cuenta;
-    int i = 0;
+    
     void Start()
     {
         
@@ -128,7 +128,6 @@ public class script : MonoBehaviour
     }
     public void realizar()
     {
-        cuenta[i] = numeror;
         
         a.GetComponent<Image>().color = Color.white;
         b.GetComponent<Image>().color = Color.white;
@@ -170,13 +169,11 @@ public class script : MonoBehaviour
     }
     public void Onclicka()
     {
+
         while(jugador == 1) { 
         while (terminar == 0) { 
             bt = 1;
-                if (numeror == cuenta[i - 1])
-                {
-                    numeror = Random.Range(0, 4);
-                }
+               
             if (numeror == 1)
             {
                 if (preguntasGeografia[index].respuestasCorrectas == bt)
@@ -228,24 +225,23 @@ public class script : MonoBehaviour
             Invoke("realizar", 2f);
             
             terminar = 0;
-        }
+                jugador = 2;
+            }
         else
         {
             Invoke("realizar", 2f);
             
             terminar = 0;
-        }
-            jugador = 2;
-            i++;
+                jugador = 2;
+            }
+            
+           
         } while (jugador == 2)
         {
             while (terminar == 0)
             {
                 bt = 1;
-                if (numeror == cuenta[i - 1])
-                {
-                    numeror = Random.Range(0, 4);
-                }
+               
                 if (numeror == 1)
                 {
                     if (preguntasGeografia[index].respuestasCorrectas == bt)
@@ -297,15 +293,17 @@ public class script : MonoBehaviour
                 Invoke("realizar", 2f);
 
                 terminar = 0;
+                jugador = 1;
             }
             else
             {
                 Invoke("realizar", 2f);
 
                 terminar = 0;
+                jugador = 1;
             }
-            jugador = 1;
-            i++;
+            
+           
         }
         }
     public void Onclickb()
