@@ -304,6 +304,7 @@ public class script : MonoBehaviour
                 jugador = 1;
             }
         }
+        Invoke("girardado", 2f);
     }
 
     public void Onclickb()
@@ -436,6 +437,7 @@ public class script : MonoBehaviour
                 jugador = 1;
             }
         }
+        Invoke("girardado", 2f);
     }
     public void Onclickc()
     {
@@ -567,6 +569,7 @@ public class script : MonoBehaviour
                 jugador = 1;
             }
         }
+        Invoke("girardado", 2f);
 
     }
     public void Onclickd()
@@ -699,7 +702,7 @@ public class script : MonoBehaviour
                 jugador = 1;
             }
         }
-
+        Invoke("girardado", 2f);
     }
 
 
