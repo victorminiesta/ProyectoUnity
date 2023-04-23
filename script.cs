@@ -207,10 +207,14 @@ public class script : MonoBehaviour
         if(terminar == 1)
         {
             contador1++;
+            a.GetComponent<Image>().color = Color.white;
+            Invoke("realizar", 2f);
         }
         else
         {
+
             Invoke("realizar", 2f);
+            a.GetComponent<Image>().color = Color.white;
         }
 
     }
