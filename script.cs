@@ -225,14 +225,16 @@ public class script : MonoBehaviour
             Invoke("realizar", 2f);
             
             terminar = 0;
-        }
+                jugador = 2;
+            }
         else
         {
             Invoke("realizar", 2f);
             
             terminar = 0;
-        }
-            jugador = 2;
+                jugador = 2;
+            }
+            
            
         } while (jugador == 2)
         {
@@ -291,14 +293,16 @@ public class script : MonoBehaviour
                 Invoke("realizar", 2f);
 
                 terminar = 0;
+                jugador = 1;
             }
             else
             {
                 Invoke("realizar", 2f);
 
                 terminar = 0;
+                jugador = 1;
             }
-            jugador = 1;
+            
            
         }
         }
