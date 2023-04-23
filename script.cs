@@ -122,25 +122,25 @@ public class script : MonoBehaviour
         if (numeror == 1)
         {
             Pregunta preguntaGeografia = preguntasGeografia[index];
-            respuesta1.text = preguntasGeografia[index].respuestas[1];
-            respuesta2.text = preguntasGeografia[index].respuestas[2];
-            respuesta3.text = preguntasGeografia[index].respuestas[3];
-            respuesta4.text = preguntasGeografia[index].respuestas[4];
+            respuesta1.text = preguntasGeografia[index].respuestas[0];
+            respuesta2.text = preguntasGeografia[index].respuestas[1];
+            respuesta3.text = preguntasGeografia[index].respuestas[2];
+            respuesta4.text = preguntasGeografia[index].respuestas[3];
             if (numeror == 2)
             {
                 Pregunta preguntaBiologia = preguntasBiologia[index];
-                respuesta1.text = preguntasGeografia[index].respuestas[1];
-                respuesta2.text = preguntasGeografia[index].respuestas[2];
-                respuesta3.text = preguntasGeografia[index].respuestas[3];
-                respuesta4.text = preguntasGeografia[index].respuestas[4];
+                respuesta1.text = preguntasBiologia[index].respuestas[0];
+                respuesta2.text = preguntasBiologia[index].respuestas[1];
+                respuesta3.text = preguntasBiologia[index].respuestas[2];
+                respuesta4.text = preguntasBiologia[index].respuestas[3];
             }
             if (numeror == 3)
             {
                 Pregunta preguntaVideojuegos = preguntasVideojuegos[index];
-                respuesta1.text = preguntasGeografia[index].respuestas[1];
-                respuesta2.text = preguntasGeografia[index].respuestas[2];
-                respuesta3.text = preguntasGeografia[index].respuestas[3];
-                respuesta4.text = preguntasGeografia[index].respuestas[4];
+                respuesta1.text = preguntasVideojuegos[index].respuestas[0];
+                respuesta2.text = preguntasVideojuegos[index].respuestas[1];
+                respuesta3.text = preguntasVideojuegos[index].respuestas[2];
+                respuesta4.text = preguntasVideojuegos[index].respuestas[3];
             }
         }
     }
@@ -166,8 +166,8 @@ public class script : MonoBehaviour
 
     // Obtener una pregunta aleatoria de la lista de Videojuegos
     index = preguntaAleatoria.Next(preguntasVideojuegos.Count);
-    Pregunta preguntaVideojuegos = preguntasVideojuegos[index];
-    */
+    Pregunta preguntaVideojuegos = preguntasVideojuegos[index];*/
+
     public List<Pregunta> preguntasGeografia = new List <Pregunta>()
     {
         new Pregunta(){
@@ -195,9 +195,9 @@ public class script : MonoBehaviour
             respuestasCorrectas = 4,
         },
         new Pregunta(){
-            pregunta = "¿Cuál es la montaña más alta de la Península Ibérica?",
-            respuestas = new string[] { "Monte Perdido", "Aneto", "Mulhacén", "Teide"},
-            respuestasCorrectas = 4,
+            pregunta = "¿Cuál de los siguientes es un órgano del sistema respiratorio humano?",
+            respuestas = new string[] { "Estómago", "Hígado", "Pulmón", "Riñón"},
+            respuestasCorrectas = 3,
         },
         new Pregunta(){
             pregunta = "¿Cuál es el pigmento que da color a la piel humana?",
