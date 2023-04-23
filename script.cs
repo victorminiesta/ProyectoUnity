@@ -23,6 +23,10 @@ public class script : MonoBehaviour
     public GameObject a, b, c, d;
     public Text setjugador1, setjugador2;
     public int bt;
+    int terminar = 0;
+    int contador1=0;
+    int contador2=0;
+    int jugador = 0;
     void Start()
     {
         
@@ -157,40 +161,58 @@ public class script : MonoBehaviour
     }
     public void Onclicka()
     {
-        bt = 1;
-        if (numeror == 1)
-        {
-            if(preguntasGeografia[index].respuestasCorrectas == bt)
+       
+            bt = 1;
+            if (numeror == 1)
             {
-                a.GetComponent<Image>().color = Color.green;
-            }
-            else
-            {
-                a.GetComponent<Image>().color = Color.red;
-            }
-        }
-        if (numeror == 2)
-        {
-            if (preguntasBiologia[index].respuestasCorrectas == bt)
-            {
-                a.GetComponent<Image>().color = Color.green;
-            }
-            else
-            {
-                a.GetComponent<Image>().color = Color.red;
-            }
-            if (numeror == 3)
-            {
-                if (preguntasVideojuegos[index].respuestasCorrectas == bt)
+                if (preguntasGeografia[index].respuestasCorrectas == bt)
                 {
                     a.GetComponent<Image>().color = Color.green;
+                    terminar = 1;
+                    
                 }
                 else
                 {
                     a.GetComponent<Image>().color = Color.red;
+                    terminar = 2;
                 }
             }
+            if (numeror == 2)
+            {
+                if (preguntasBiologia[index].respuestasCorrectas == bt)
+                {
+                    a.GetComponent<Image>().color = Color.green;
+                    terminar = 1;
+                }
+                else
+                {
+                    a.GetComponent<Image>().color = Color.red;
+                    terminar = 2;
+                }
+                if (numeror == 3)
+                {
+                    if (preguntasVideojuegos[index].respuestasCorrectas == bt)
+                    {
+                        a.GetComponent<Image>().color = Color.green;
+                        terminar = 1;
+                    }
+                    else
+                    {
+                        a.GetComponent<Image>().color = Color.red;
+                        terminar = 2;
+                    }
+                }
+            }
+        
+        if(terminar == 1)
+        {
+            contador1++;
         }
+        else
+        {
+            Invoke("realizar", 2f);
+        }
+
     }
     public void Onclickb()
     {
