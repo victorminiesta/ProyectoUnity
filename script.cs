@@ -64,10 +64,12 @@ public class script : MonoBehaviour
         if(biologia.gameObject.activeSelf && geografia.gameObject.activeSelf && videojuegos.gameObject.activeSelf)
         {
             paneljugador1.SetActive(true);
+            activarpreguntas.SetActive(false);
         }
         if (biologia2.gameObject.activeSelf && geografia2.gameObject.activeSelf && videojugos2.gameObject.activeSelf)
         {
             paneljugador2.SetActive(true);
+            activarpreguntas.SetActive(false);
         }
 
 
