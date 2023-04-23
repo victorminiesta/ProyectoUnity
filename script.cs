@@ -301,382 +301,396 @@ public class script : MonoBehaviour
 
     public void Onclickb()
     {
-        while (jugador == 1)
+        if (jugador == 1)
         {
+            // Jugador 1 activo
             while (terminar == 0)
             {
-                bt = 2;
+                bt = 1;
                 if (numeror == 1)
                 {
                     if (preguntasGeografia[index].respuestasCorrectas == bt)
                     {
-                        b.GetComponent<Image>().color = Color.green;
+                        a.GetComponent<Image>().color = Color.green;
                         terminar = 1;
-
+                        geografia.SetActive(true);
                     }
                     else
                     {
-                        b.GetComponent<Image>().color = Color.red;
+                        a.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
                 }
-                if (numeror == 2)
+                else if (numeror == 2)
                 {
                     if (preguntasBiologia[index].respuestasCorrectas == bt)
                     {
-                        b.GetComponent<Image>().color = Color.green;
+                        a.GetComponent<Image>().color = Color.green;
                         terminar = 1;
+                        biologia.SetActive(true);
                     }
                     else
                     {
-                        b.GetComponent<Image>().color = Color.red;
+                        a.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
-                    if (numeror == 3)
+                }
+                else if (numeror == 3)
+                {
+                    if (preguntasVideojuegos[index].respuestasCorrectas == bt)
                     {
-                        if (preguntasVideojuegos[index].respuestasCorrectas == bt)
-                        {
-                            b.GetComponent<Image>().color = Color.green;
-                            terminar = 1;
-                        }
-                        else
-                        {
-                            b.GetComponent<Image>().color = Color.red;
-                            terminar = 2;
-                        }
+                        a.GetComponent<Image>().color = Color.green;
+                        terminar = 1;
+                        videojuegos.SetActive(true);
+                    }
+                    else
+                    {
+                        a.GetComponent<Image>().color = Color.red;
+                        terminar = 2;
                     }
                 }
             }
-
             if (terminar == 1)
             {
                 contador1++;
+                Invoke("girardado", 2f);
                 Invoke("realizar", 2f);
-
                 terminar = 0;
+                jugador = 2;
             }
             else
             {
+                Invoke("girardado", 2f);
                 Invoke("realizar", 2f);
-
                 terminar = 0;
+                jugador = 2;
             }
-            jugador = 2;
-        } while (jugador == 2)
+        }
+        else if (jugador == 2)
         {
+            // Jugador 2 activo
             while (terminar == 0)
             {
-                bt = 2;
+                bt = 1;
                 if (numeror == 1)
                 {
                     if (preguntasGeografia[index].respuestasCorrectas == bt)
                     {
-                        b.GetComponent<Image>().color = Color.green;
+                        a.GetComponent<Image>().color = Color.green;
                         terminar = 1;
-
+                        geografia2.SetActive(true);
                     }
                     else
                     {
-                        b.GetComponent<Image>().color = Color.red;
+                        a.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
                 }
-                if (numeror == 2)
+                else if (numeror == 2)
                 {
                     if (preguntasBiologia[index].respuestasCorrectas == bt)
                     {
-                        b.GetComponent<Image>().color = Color.green;
+                        a.GetComponent<Image>().color = Color.green;
                         terminar = 1;
+                        biologia2.SetActive(true);
                     }
                     else
                     {
-                        b.GetComponent<Image>().color = Color.red;
+                        a.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
-                    if (numeror == 3)
+                }
+                else if (numeror == 3)
+                {
+                    if (preguntasVideojuegos[index].respuestasCorrectas == bt)
                     {
-                        if (preguntasVideojuegos[index].respuestasCorrectas == bt)
-                        {
-                            b.GetComponent<Image>().color = Color.green;
-                            terminar = 1;
-                        }
-                        else
-                        {
-                            b.GetComponent<Image>().color = Color.red;
-                            terminar = 2;
-                        }
+                        a.GetComponent<Image>().color = Color.green;
+                        terminar = 1;
+                        videojugos2.SetActive(true);
+                    }
+                    else
+                    {
+                        a.GetComponent<Image>().color = Color.red;
+                        terminar = 2;
                     }
                 }
             }
-
             if (terminar == 1)
             {
                 contador2++;
                 Invoke("realizar", 2f);
-
                 terminar = 0;
+                jugador = 1;
             }
             else
             {
                 Invoke("realizar", 2f);
-
                 terminar = 0;
+                jugador = 1;
             }
-            jugador = 1;
         }
-
     }
     public void Onclickc()
     {
-        while (jugador == 1)
+        if (jugador == 1)
         {
+            // Jugador 1 activo
             while (terminar == 0)
             {
-                bt = 3;
+                bt = 1;
                 if (numeror == 1)
                 {
                     if (preguntasGeografia[index].respuestasCorrectas == bt)
                     {
-                        c.GetComponent<Image>().color = Color.green;
+                        a.GetComponent<Image>().color = Color.green;
                         terminar = 1;
-
+                        geografia.SetActive(true);
                     }
                     else
                     {
-                        c.GetComponent<Image>().color = Color.red;
+                        a.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
                 }
-                if (numeror == 2)
+                else if (numeror == 2)
                 {
                     if (preguntasBiologia[index].respuestasCorrectas == bt)
                     {
-                        c.GetComponent<Image>().color = Color.green;
+                        a.GetComponent<Image>().color = Color.green;
                         terminar = 1;
+                        biologia.SetActive(true);
                     }
                     else
                     {
-                        c.GetComponent<Image>().color = Color.red;
+                        a.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
-                    if (numeror == 3)
+                }
+                else if (numeror == 3)
+                {
+                    if (preguntasVideojuegos[index].respuestasCorrectas == bt)
                     {
-                        if (preguntasVideojuegos[index].respuestasCorrectas == bt)
-                        {
-                            c.GetComponent<Image>().color = Color.green;
-                            terminar = 1;
-                        }
-                        else
-                        {
-                            c.GetComponent<Image>().color = Color.red;
-                            terminar = 2;
-                        }
+                        a.GetComponent<Image>().color = Color.green;
+                        terminar = 1;
+                        videojuegos.SetActive(true);
+                    }
+                    else
+                    {
+                        a.GetComponent<Image>().color = Color.red;
+                        terminar = 2;
                     }
                 }
             }
-
             if (terminar == 1)
             {
                 contador1++;
+                Invoke("girardado", 2f);
                 Invoke("realizar", 2f);
-
                 terminar = 0;
+                jugador = 2;
             }
             else
             {
+                Invoke("girardado", 2f);
                 Invoke("realizar", 2f);
-
                 terminar = 0;
+                jugador = 2;
             }
-            jugador = 2;
-        } while (jugador == 2)
+        }
+        else if (jugador == 2)
         {
+            // Jugador 2 activo
             while (terminar == 0)
             {
-                bt = 3;
+                bt = 1;
                 if (numeror == 1)
                 {
                     if (preguntasGeografia[index].respuestasCorrectas == bt)
                     {
-                        c.GetComponent<Image>().color = Color.green;
+                        a.GetComponent<Image>().color = Color.green;
                         terminar = 1;
-
+                        geografia2.SetActive(true);
                     }
                     else
                     {
-                        c.GetComponent<Image>().color = Color.red;
+                        a.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
                 }
-                if (numeror == 2)
+                else if (numeror == 2)
                 {
                     if (preguntasBiologia[index].respuestasCorrectas == bt)
                     {
-                        c.GetComponent<Image>().color = Color.green;
+                        a.GetComponent<Image>().color = Color.green;
                         terminar = 1;
+                        biologia2.SetActive(true);
                     }
                     else
                     {
-                        c.GetComponent<Image>().color = Color.red;
+                        a.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
-                    if (numeror == 3)
+                }
+                else if (numeror == 3)
+                {
+                    if (preguntasVideojuegos[index].respuestasCorrectas == bt)
                     {
-                        if (preguntasVideojuegos[index].respuestasCorrectas == bt)
-                        {
-                            c.GetComponent<Image>().color = Color.green;
-                            terminar = 1;
-                        }
-                        else
-                        {
-                            c.GetComponent<Image>().color = Color.red;
-                            terminar = 2;
-                        }
+                        a.GetComponent<Image>().color = Color.green;
+                        terminar = 1;
+                        videojugos2.SetActive(true);
+                    }
+                    else
+                    {
+                        a.GetComponent<Image>().color = Color.red;
+                        terminar = 2;
                     }
                 }
             }
-
             if (terminar == 1)
             {
                 contador2++;
                 Invoke("realizar", 2f);
-
                 terminar = 0;
+                jugador = 1;
             }
             else
             {
                 Invoke("realizar", 2f);
-
                 terminar = 0;
+                jugador = 1;
             }
-            jugador = 1;
         }
 
     }
     public void Onclickd()
     {
-        while (jugador == 1)
+        if (jugador == 1)
         {
+            // Jugador 1 activo
             while (terminar == 0)
             {
-                bt = 4;
+                bt = 1;
                 if (numeror == 1)
                 {
                     if (preguntasGeografia[index].respuestasCorrectas == bt)
                     {
-                        d.GetComponent<Image>().color = Color.green;
+                        a.GetComponent<Image>().color = Color.green;
                         terminar = 1;
-
+                        geografia.SetActive(true);
                     }
                     else
                     {
-                        d.GetComponent<Image>().color = Color.red;
+                        a.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
                 }
-                if (numeror == 2)
+                else if (numeror == 2)
                 {
                     if (preguntasBiologia[index].respuestasCorrectas == bt)
                     {
-                        d.GetComponent<Image>().color = Color.green;
+                        a.GetComponent<Image>().color = Color.green;
                         terminar = 1;
+                        biologia.SetActive(true);
                     }
                     else
                     {
-                        d.GetComponent<Image>().color = Color.red;
+                        a.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
-                    if (numeror == 3)
+                }
+                else if (numeror == 3)
+                {
+                    if (preguntasVideojuegos[index].respuestasCorrectas == bt)
                     {
-                        if (preguntasVideojuegos[index].respuestasCorrectas == bt)
-                        {
-                            d.GetComponent<Image>().color = Color.green;
-                            terminar = 1;
-                        }
-                        else
-                        {
-                            d.GetComponent<Image>().color = Color.red;
-                            terminar = 2;
-                        }
+                        a.GetComponent<Image>().color = Color.green;
+                        terminar = 1;
+                        videojuegos.SetActive(true);
+                    }
+                    else
+                    {
+                        a.GetComponent<Image>().color = Color.red;
+                        terminar = 2;
                     }
                 }
             }
-
             if (terminar == 1)
             {
                 contador1++;
+                Invoke("girardado", 2f);
                 Invoke("realizar", 2f);
-
                 terminar = 0;
+                jugador = 2;
             }
             else
             {
+                Invoke("girardado", 2f);
                 Invoke("realizar", 2f);
-
                 terminar = 0;
+                jugador = 2;
             }
-            jugador = 2;
-        } while (jugador == 2)
+        }
+        else if (jugador == 2)
         {
+            // Jugador 2 activo
             while (terminar == 0)
             {
-                bt = 4;
+                bt = 1;
                 if (numeror == 1)
                 {
                     if (preguntasGeografia[index].respuestasCorrectas == bt)
                     {
-                        d.GetComponent<Image>().color = Color.green;
+                        a.GetComponent<Image>().color = Color.green;
                         terminar = 1;
-
+                        geografia2.SetActive(true);
                     }
                     else
                     {
-                        d.GetComponent<Image>().color = Color.red;
+                        a.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
                 }
-                if (numeror == 2)
+                else if (numeror == 2)
                 {
                     if (preguntasBiologia[index].respuestasCorrectas == bt)
                     {
-                        d.GetComponent<Image>().color = Color.green;
+                        a.GetComponent<Image>().color = Color.green;
                         terminar = 1;
+                        biologia2.SetActive(true);
                     }
                     else
                     {
-                        d.GetComponent<Image>().color = Color.red;
+                        a.GetComponent<Image>().color = Color.red;
                         terminar = 2;
                     }
-                    if (numeror == 3)
+                }
+                else if (numeror == 3)
+                {
+                    if (preguntasVideojuegos[index].respuestasCorrectas == bt)
                     {
-                        if (preguntasVideojuegos[index].respuestasCorrectas == bt)
-                        {
-                            d.GetComponent<Image>().color = Color.green;
-                            terminar = 1;
-                        }
-                        else
-                        {
-                            d.GetComponent<Image>().color = Color.red;
-                            terminar = 2;
-                        }
+                        a.GetComponent<Image>().color = Color.green;
+                        terminar = 1;
+                        videojugos2.SetActive(true);
+                    }
+                    else
+                    {
+                        a.GetComponent<Image>().color = Color.red;
+                        terminar = 2;
                     }
                 }
             }
-
             if (terminar == 1)
             {
-                contador1++;
+                contador2++;
                 Invoke("realizar", 2f);
-
                 terminar = 0;
+                jugador = 1;
             }
             else
             {
                 Invoke("realizar", 2f);
-
                 terminar = 0;
+                jugador = 1;
             }
-            jugador = 1;
         }
 
     }
