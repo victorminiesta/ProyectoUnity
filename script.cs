@@ -26,7 +26,7 @@ public class script : MonoBehaviour
     int terminar = 0;
     int contador1=0;
     int contador2=0;
-    int jugador = 0;
+    int jugador = 1;
     void Start()
     {
         
