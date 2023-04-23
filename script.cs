@@ -21,6 +21,7 @@ public class script : MonoBehaviour
     public Text categoria;
     public Text respuesta1, respuesta2, respuesta3, respuesta4;
     public GameObject a, b, c, d;
+    public Text setjugador1, setjugador2;
     void Start()
     {
         
@@ -53,7 +54,7 @@ public class script : MonoBehaviour
         }
 
         
-
+        
     }
     public void fuera()
     {
@@ -90,7 +91,8 @@ public class script : MonoBehaviour
             aviso2.SetActive(true);
             aviso.SetActive(false);
         }
-        
+        setjugador1.text = jugador1.text;
+        setjugador2.text = jugador2.text;
     }
     public void girardado()
     {
