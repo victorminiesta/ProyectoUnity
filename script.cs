@@ -29,7 +29,7 @@ public class script : MonoBehaviour
     int jugador = 1;
     public GameObject geografia, biologia, videojuegos,geografia2,biologia2,videojugos2;
     int [] cuenta;
-    int i = 0;
+    
     void Start()
     {
         
@@ -233,7 +233,7 @@ public class script : MonoBehaviour
             terminar = 0;
         }
             jugador = 2;
-            
+           
         } while (jugador == 2)
         {
             while (terminar == 0)
