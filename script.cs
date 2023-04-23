@@ -161,7 +161,7 @@ public class script : MonoBehaviour
     }
     public void Onclicka()
     {
-       
+        while (terminar == 0) { 
             bt = 1;
             if (numeror == 1)
             {
@@ -203,12 +203,13 @@ public class script : MonoBehaviour
                     }
                 }
             }
-        
-        if(terminar == 1)
+        }
+
+        if (terminar == 1)
         {
             contador1++;
-            a.GetComponent<Image>().color = Color.white;
             Invoke("realizar", 2f);
+            a.GetComponent<Image>().color = Color.white;
         }
         else
         {
